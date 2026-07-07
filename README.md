@@ -1,12 +1,18 @@
 # 📉 Telco Customer Churn Analysis
 
-> End-to-end Power BI dashboard analyzing churn drivers, customer lifetime value (CLTV), and revenue impact across 7,000+ telecom customers, translating raw data into retention strategy.
+> End-to-end Power BI dashboard analyzing churn drivers, customer lifetime value (CLTV), and revenue impact across 7,000+ telecom customers translating raw data into retention strategy.
 
 ---
 
 ## 📌 Overview
 
-Customer churn is one of the most expensive problems in the telecom industry — acquiring a new customer costs 5–25x more than retaining an existing one. This project builds a business intelligence solution that goes beyond simply measuring churn: it quantifies the financial impact, identifies the specific customer segments driving it, and surfaces actionable retention signals through an interactive Power BI dashboard.
+Customer churn is one of the most expensive problems in the telecom industry acquiring a new customer costs 5–25x more than retaining an existing one. This project builds a business intelligence solution that goes beyond simply measuring churn: it quantifies the financial impact, identifies the specific customer segments driving it, and surfaces actionable retention signals through an interactive Power BI dashboard.
+
+---
+
+## 🖼️ Dashboard Preview
+
+![Dashboard Preview](snapshot.PNG)
 
 ---
 
@@ -61,7 +67,7 @@ CLTV = DIVIDE(SUM(Telco[MonthlyCharges]), [Churn Rate])
 
 ## 📁 Dataset
 
-**IBM Telco Customer Churn Dataset** (via Kaggle)
+**IBM Telco Customer Churn Dataset** — included in this repo as `churn_data.xlsx`
 - 7,043 rows · 21 features
 - Features: demographics, subscribed services, contract details, billing method, tenure, monthly charges, total charges, churn label
 
@@ -69,9 +75,9 @@ CLTV = DIVIDE(SUM(Telco[MonthlyCharges]), [Churn Rate])
 
 ## ⚙️ Setup & Usage
 
-1. Download the `.pbix` file from this repo
-2. Open in **Power BI Desktop** (free download from Microsoft)
-3. If prompted, update the data source path to point to the local `.csv` file
+1. Clone or download this repo — the dataset (`churn_data.xlsx`) and dashboard (`*.pbix`) are both included, no external download needed
+2. Open the `.pbix` file in **Power BI Desktop** (free download from Microsoft)
+3. If prompted, update the data source path to point to `churn_data.xlsx` in the repo folder
 4. Interact with slicers to filter by contract type, internet service, tenure band, or demographic segment
 
 ---
